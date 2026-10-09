@@ -9,13 +9,32 @@ Turn a request into a plan the user can approve and an agent can carry out witho
 
 ## How to interview
 
+Ask every question in the chat as an ordinary message. Do not use a question tool, a form, or a pop-up, even if you have one: the questions and answers must stay visible in the conversation.
+
 - Read the request and everything attached to it first. Anything you can find out yourself from the request, the attached files, or the connected apps, find out. Only ask the user what you cannot look up.
-- If you have a tool for asking the user questions with selectable options, use it, and put your recommended answer first among the options. If you have no such tool, ask in chat.
-- If that tool can take several questions at once, group questions that do not depend on each other into one round. Hold back any question whose wording or options depend on an earlier answer until that answer is in. When asking in chat, ask one question at a time.
+- Work in rounds. In each round, ask every question you can ask now without guessing at an answer you have not heard yet. A question whose wording or options depend on another question in the same round belongs in a later round.
+- Number the questions, running on across rounds, so the user can answer "1 yes, 2 no, use the shared drive".
 - Give your recommended answer with every question, and say briefly why. The user should be able to accept it most of the time.
+- After a round, wait for the answers. Then work out what they have unlocked and ask the next round.
 - Follow up on vague answers. "Make it look professional" or "the usual people" is not an answer yet; ask what it means here.
 - If an answer changes something decided earlier, say so and settle it before moving on.
 - Stop when every section of the plan can be filled in. Do not pad the interview with questions whose answers would not change the plan.
+
+Format a round like this:
+
+```
+❓ **Q1** - **<question title>**: <the question, with the choices if there are any>
+
+➡️ **Recommended:** <your recommended answer, and why>
+
+---
+
+❓ **Q2** - **<question title>**: <the question, with the choices if there are any>
+
+➡️ **Recommended:** <your recommended answer, and why>
+```
+
+End each round with one line telling the user they can reply by number, and that "go with your recommendations" accepts all of them.
 
 ## What to cover
 
