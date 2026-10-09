@@ -7,14 +7,16 @@ Skills for getting agents to do real work, from the vFactor training courses. Th
 Install every skill:
 
 ```
-npx skills add vFactor-io/skills
+npx skills add vFactor-io/skills -g
 ```
 
 Install one skill:
 
 ```
-npx skills add vFactor-io/skills --skill lets-plan-it
+npx skills add vFactor-io/skills --skill lets-plan-it -g
 ```
+
+The `-g` makes the skill available in every chat, not only in the folder you ran the command from.
 
 If you use the ChatGPT or Claude app rather than a terminal, download the skill's folder as a ZIP and upload it in the app's Skills settings.
 
