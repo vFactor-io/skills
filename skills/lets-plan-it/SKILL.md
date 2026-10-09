@@ -10,8 +10,9 @@ Turn a request into a plan the user can approve and an agent can carry out witho
 ## How to interview
 
 - Read the request and everything attached to it first. Anything you can find out yourself from the request, the attached files, or the connected apps, find out. Only ask the user what you cannot look up.
-- Ask one question at a time, and wait for the answer before asking the next.
-- Give your recommended answer with every question, and say briefly why. The user should be able to reply "yes" most of the time.
+- If you have a tool for asking the user questions with selectable options, use it, and put your recommended answer first among the options. If you have no such tool, ask in chat.
+- If that tool can take several questions at once, group questions that do not depend on each other into one round. Hold back any question whose wording or options depend on an earlier answer until that answer is in. When asking in chat, ask one question at a time.
+- Give your recommended answer with every question, and say briefly why. The user should be able to accept it most of the time.
 - Follow up on vague answers. "Make it look professional" or "the usual people" is not an answer yet; ask what it means here.
 - If an answer changes something decided earlier, say so and settle it before moving on.
 - Stop when every section of the plan can be filled in. Do not pad the interview with questions whose answers would not change the plan.
