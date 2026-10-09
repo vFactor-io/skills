@@ -13,7 +13,8 @@ Ask every question in the chat as an ordinary message. Do not use a question too
 
 - Read the request and everything attached to it first. Anything you can find out yourself from the request, the attached files, or the connected apps, find out. Only ask the user what you cannot look up.
 - Work in rounds. In each round, ask every question you can ask now without guessing at an answer you have not heard yet. A question whose wording or options depend on another question in the same round belongs in a later round.
-- Number the questions, running on across rounds, so the user can answer "1 yes, 2 no, use the shared drive".
+- Number the questions, running on across rounds.
+- When a question has real choices, list them as lettered options (A, B, C) so the user can answer "1B, 2A". When it has none, such as a date or a name, ask it as an open question. Do not invent options to fill out a list.
 - Give your recommended answer with every question, and say briefly why. The user should be able to accept it most of the time.
 - After a round, wait for the answers. Then work out what they have unlocked and ask the next round.
 - Follow up on vague answers. "Make it look professional" or "the usual people" is not an answer yet; ask what it means here.
@@ -23,18 +24,21 @@ Ask every question in the chat as an ordinary message. Do not use a question too
 Format a round like this:
 
 ```
-❓ **Q1** - **<question title>**: <the question, with the choices if there are any>
+❓ **Q1** - **<question title>**: <the question>
+   A. <choice>
+   B. <choice>
+   C. <choice>
 
-➡️ **Recommended:** <your recommended answer, and why>
+➡️ **Recommended:** <the letter of your recommended choice, and why>
 
 ---
 
-❓ **Q2** - **<question title>**: <the question, with the choices if there are any>
+❓ **Q2** - **<question title>**: <an open question with no set choices>
 
 ➡️ **Recommended:** <your recommended answer, and why>
 ```
 
-End each round with one line telling the user they can reply by number, and that "go with your recommendations" accepts all of them.
+End each round with one line telling the user they can reply by number and letter, and that "go with your recommendations" accepts all of them.
 
 ## What to cover
 
