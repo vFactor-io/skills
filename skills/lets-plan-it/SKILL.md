@@ -13,6 +13,9 @@ Ask every question in the chat as an ordinary message. Do not use a question too
 
 - Read the request and everything attached to it first. Anything you can find out yourself from the request, the attached files, or the connected apps, find out. Only ask the user what you cannot look up.
 - Work in rounds. In each round, ask every question you can ask now without guessing at an answer you have not heard yet. A question whose wording or options depend on another question in the same round belongs in a later round.
+- Ask at most five questions in a round, starting with the ones that shape the plan most. Most requests should be planned in two rounds.
+- Ask about one decision per question. If you need three things from the user, that is three questions, not one question with three parts.
+- Do not ask about small details you can settle with a sensible default, such as a timezone, a time of day, or a fallback if something arrives late. Choose the default and list it under Assumptions in the plan, where the user can correct it.
 - Number the questions, running on across rounds.
 - When a question has real choices, list them as lettered options (A, B, C) so the user can answer "1B, 2A". When it has none, such as a date or a name, ask it as an open question. Do not invent options to fill out a list.
 - Give your recommended answer with every question, and say briefly why. The user should be able to accept it most of the time.
@@ -47,14 +50,14 @@ Work through these in order, skipping whatever the request already answers.
 1. **Outcome.** What exists when this is done, and who receives it? What would make the requester say it was done well?
 2. **Inputs.** What will the agent work from: which emails, files, apps, people? What is missing and who has it?
 3. **Steps.** The route from the inputs to the outcome, in the order they happen.
-4. **Authority.** Which steps may the agent do on its own, and which need a person? Anything that is sent, published, paid for, deleted, or seen by someone outside the team needs a person unless the user says otherwise.
-5. **Checkpoint.** Where does the agent stop for the go-ahead, and what does it show at that point so the decision is easy to make?
+4. **Authority.** Which steps may the agent do on its own, and which need a person? Anything that is sent, published, paid for, deleted, or seen by someone outside the team needs a person unless the user says otherwise, and your recommendation should follow that default. This includes messages the agent would send to colleagues to collect inputs.
+5. **Checkpoint.** Where does the agent stop for the go-ahead, and what does it show at that point so the decision is easy to make? If the user asks for changes at the checkpoint, the agent makes them and shows the result again before going on.
 6. **Proof.** How will the user check the result is right, without redoing the work?
 7. **If it goes wrong.** What should the agent do if an input is missing, a step fails, or it finds something unexpected: stop and ask, or carry on and note it?
 
 ## The plan
 
-When the interview is done, write the plan in exactly this form. Keep it to one page. Write "None" in a section that has nothing in it rather than leaving it out, and put anything still undecided in Open questions instead of guessing.
+When the interview is done, write the plan in exactly this form. Keep it to one page, with one or two lines for each entry. Tag every step as either "agent alone" or "needs approval"; if a step is partly each, split it into two steps. Do not mention this skill in the plan. Write "None" in a section that has nothing in it rather than leaving it out, and put anything still undecided in Open questions instead of guessing.
 
 ```
 # Plan: <short name for the work>
@@ -67,13 +70,17 @@ When the interview is done, write the plan in exactly this form. Keep it to one 
 - <what the agent works from, and where it lives>
 
 **Steps:**
-1. <step> (agent alone / needs approval)
+1. <step> (agent alone)
+2. <step> (needs approval)
 
 **Checkpoint:** <where the agent stops, and what it shows>
 
 **Proof:** <how we check it worked>
 
 **If it goes wrong:** <what the agent does>
+
+**Assumptions:**
+- <a small detail you chose a default for>
 
 **Open questions:**
 - <anything not yet decided, and who decides it>
